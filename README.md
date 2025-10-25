@@ -64,7 +64,7 @@ mysql -u root -p < database_full_setup.sql
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', ''); // Ваш пароль
-define('DB_NAME', 'songsbook');
+define('DB_NAME', 'j27119254_song');
 ```
 
 4. **Запустите сервер:**

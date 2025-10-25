@@ -31,10 +31,12 @@ mysql -u root -p < database_full_setup.sql
 
 ```php
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');  // Ваш пароль MySQL
-define('DB_NAME', 'songsbook');
+define('DB_USERNAME', 'root');  // Ваш пользователь MySQL
+define('DB_PASSWORD', '');      // Ваш пароль MySQL
+define('DB_NAME', 'j27119254_song');  // Имя вашей базы данных
 ```
+
+**Важно:** База данных `j27119254_song` должна уже существовать на сервере MySQL!
 
 ## Шаг 3: Запуск проекта
 

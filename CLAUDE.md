@@ -12,7 +12,7 @@ All PHP files use centralized database configuration from `config/db_config.php`
 - Host: `localhost`
 - Username: `root`
 - Password: (empty)
-- Database: `songsbook`
+- Database: `j27119254_song`
 
 The connection is automatically established and closed using the config file. All pages use `require_once('config/db_config.php')` to connect.
 
@@ -105,10 +105,12 @@ php -S localhost:8000
 
 ### Accessing the Admin Panel
 
-After running the SQL migration (`database_migration.sql`):
+After running the SQL setup (`database_full_setup.sql`):
 - Admin URL: `http://localhost:8000/admin/admin_login.php`
 - Default credentials: `admin` / `admin123`
 - Change the default password after first login!
+
+**Note:** Database `j27119254_song` must exist before running the SQL script.
 
 ## Security Notes
 

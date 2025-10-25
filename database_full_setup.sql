@@ -1,17 +1,10 @@
 -- ============================================
 -- SONGLY - Full Database Setup Script
--- Создание базы данных с нуля
+-- Создание таблиц в существующей базе данных
 -- ============================================
 
--- Удаление существующей базы (осторожно!)
--- Раскомментируйте следующую строку, если хотите пересоздать базу
--- DROP DATABASE IF EXISTS songsbook;
-
--- Создание базы данных
-CREATE DATABASE IF NOT EXISTS songsbook CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
--- Использование базы данных
-USE songsbook;
+-- Использование существующей базы данных
+USE j27119254_song;
 
 -- ============================================
 -- 1. Таблица исполнителей (singer)
@@ -126,10 +119,10 @@ INSERT INTO `textsong` (`id_songs`, `producer`, `textsong`) VALUES
 -- ============================================
 
 -- Проверка созданных таблиц
-SELECT 'Database created successfully!' AS status;
+SELECT 'Database tables created successfully!' AS status;
 SELECT TABLE_NAME, TABLE_ROWS
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'songsbook'
+WHERE TABLE_SCHEMA = 'j27119254_song'
 ORDER BY TABLE_NAME;
 
 -- Вывод информации о созданном администраторе
