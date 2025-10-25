@@ -118,22 +118,20 @@ INSERT INTO `textsong` (`id_songs`, `producer`, `textsong`) VALUES
 -- ЗАВЕРШЕНИЕ
 -- ============================================
 
--- Проверка созданных таблиц
-SELECT 'Database tables created successfully!' AS status;
-SELECT TABLE_NAME, TABLE_ROWS
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'j27119254_song'
-ORDER BY TABLE_NAME;
+-- Готово! Таблицы созданы в базе данных j27119254_song
 
--- Вывод информации о созданном администраторе
-SELECT 'Admin user created:' AS info;
-SELECT id, username, created_at FROM admin_users;
-
--- Вывод статистики
-SELECT 'Database Statistics:' AS info;
-SELECT
-    (SELECT COUNT(*) FROM singer) AS singers,
-    (SELECT COUNT(*) FROM songs) AS songs,
-    (SELECT COUNT(*) FROM albums) AS albums,
-    (SELECT COUNT(*) FROM textsong) AS lyrics,
-    (SELECT COUNT(*) FROM admin_users) AS admins;
+-- Для проверки результатов выполните следующие запросы отдельно:
+--
+-- Проверить созданные таблицы:
+-- SHOW TABLES;
+--
+-- Проверить администратора:
+-- SELECT id, username, created_at FROM admin_users;
+--
+-- Проверить статистику:
+-- SELECT
+--     (SELECT COUNT(*) FROM singer) AS singers,
+--     (SELECT COUNT(*) FROM songs) AS songs,
+--     (SELECT COUNT(*) FROM albums) AS albums,
+--     (SELECT COUNT(*) FROM textsong) AS lyrics,
+--     (SELECT COUNT(*) FROM admin_users) AS admins;

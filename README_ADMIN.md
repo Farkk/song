@@ -35,11 +35,13 @@ mysql -u root -p < database_full_setup.sql
 mysql -u root -p songsbook < database_migration.sql
 ```
 
-Или через phpMyAdmin:
+Или через phpMyAdmin (РЕКОМЕНДУЕТСЯ):
 1. Откройте phpMyAdmin
-2. Выберите базу данных `songsbook`
+2. **Выберите базу данных `j27119254_song` слева**
 3. Перейдите на вкладку "SQL"
-4. Скопируйте и выполните содержимое файла `database_migration.sql`
+4. Скопируйте и выполните содержимое файла **`database_setup_simple.sql`**
+
+**Для phpMyAdmin используйте `database_setup_simple.sql` - он оптимизирован для работы через веб-интерфейс!**
 
 ### 2. Проверка конфигурации
 
