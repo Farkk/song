@@ -1,0 +1,212 @@
+main{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+.singer-image {
+    width: 100vw; 
+    height: 237px; 
+    object-fit: cover; 
+    position: relative; 
+}
+.description-singer {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1209px;
+}
+.left-list-container {
+    margin-top: 53px;
+    max-width: 450px; 
+    text-align: center;
+    margin-right: 56px; 
+}
+.singer-name {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+.singer-followers {
+    color: white;
+    font-size: 20px;
+}
+.description {
+    color: white;
+    border: 1px solid white; 
+    padding: 20px; 
+    font-size: 22px;
+    margin-top: 12px;
+}
+.right-list-container {
+    align-items: center; 
+    margin-top: 20px;
+}
+.item-container {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+.item {
+    display: flex; 
+    align-items: center; 
+    margin-right: 27px; 
+}
+.icon {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 0px; 
+}
+.text {
+    font-size: 16px; 
+    color: white; 
+}
+.section-name{
+    color: white;
+    font-size: 22px;
+}
+.songs-container {
+    width: 699px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.song-block {
+    width: 326px;
+    height: 76px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.song-image {
+    width: 60px;
+    height: 60px;
+}
+.song-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 17px;
+}
+.song-title {
+    margin-bottom: 2px;
+}
+.artist-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.listens-info {
+    display: flex;
+    align-items: center;
+}
+.listens-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.listens-count {
+    font-size: 14px;
+}
+.albums-container {
+    width: 699px;
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 19px;
+    font-size: 19px;
+}
+.album-block {
+    width: 326px;
+    height: 76px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.description-song{
+    margin-top: 28px;
+    width: 1122px;
+}
+.upper-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-song{
+    width: 252px;
+    height: 252px;
+    margin-right: 33px;
+}
+.details-song{
+    color: white;
+    margin-top: 67px;
+}
+.song-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+.song-author {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 6px;
+    margin-bottom: 41px;
+}
+.song-title-producer{
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 6px;
+}
+.song-producer{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.text-song{
+    font-size: 20px;
+    color: white;
+    margin-top: 17px;
+}
+.album-image {
+    width: 60px;
+    height: 60px;
+}
+.songslist {
+    font-size: 22px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -30%;
+}
+
+.namesong {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.singerlist {
+    font-size: 22px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -30%;
+}
+
+.namesinger {
+    color: white;
+    text-decoration: none;
+}

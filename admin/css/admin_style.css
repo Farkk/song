@@ -1,0 +1,109 @@
+/**
+ * Admin Panel Custom Styles
+ * Дополнительные стили для админ-панели SONGLY
+ */
+
+body {
+    background-color: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.table-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.btn-action {
+    margin-right: 5px;
+}
+
+.alert-custom {
+    border-radius: 8px;
+}
+
+/* Preview image in forms */
+.image-preview {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+}
+
+/* Custom file input */
+.custom-file-input:lang(ru) ~ .custom-file-label::after {
+    content: "Обзор";
+}
+
+/* Table responsive improvements */
+.table-responsive {
+    border-radius: 8px;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: white;
+    border: none;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Form improvements */
+.form-control:focus,
+.form-select:focus {
+    border-color: #343a40;
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.25);
+}
+
+/* Action buttons */
+.action-buttons {
+    white-space: nowrap;
+}
+
+.action-buttons .btn {
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #dee2e6;
+}
+
+/* Modal improvements */
+.modal-header {
+    background-color: #343a40;
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}

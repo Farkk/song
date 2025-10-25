@@ -1,0 +1,31 @@
+.songslist {
+    font-size: 22px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vw;
+}
+
+.namesong {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.singerlist {
+    font-size: 22px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vw;
+}
+
+.namesinger {
+    color: white;
+    text-decoration: none;
+}
