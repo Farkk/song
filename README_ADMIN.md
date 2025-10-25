@@ -48,10 +48,10 @@ mysql -u root -p songsbook < database_migration.sql
 Убедитесь, что параметры подключения к БД в файле `config/db_config.php` корректны:
 
 ```php
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', 'songbooks.asmart-test-dev.ru');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'songsbook');
+define('DB_NAME', 'j27119254_song');
 ```
 
 ### 3. Проверка прав доступа
@@ -69,7 +69,7 @@ chmod -R 755 images/album/
 
 После выполнения миграции автоматически создается администратор:
 
-- **URL**: `http://ваш-домен/admin/admin_login.php`
+- **URL**: `https://songbooks.asmart-test-dev.ru/admin/admin_login.php`
 - **Логин**: `admin`
 - **Пароль**: `admin123`
 
@@ -77,22 +77,18 @@ chmod -R 755 images/album/
 
 ## Запуск проекта
 
-### Используя встроенный сервер PHP:
+### Доступ к сайту:
 
-```bash
-cd /path/to/songsbook_project
-php -S localhost:8000
-```
+Откройте в браузере:
+- Сайт: `https://songbooks.asmart-test-dev.ru/index.php`
+- Админка: `https://songbooks.asmart-test-dev.ru/admin/admin_login.php`
 
-Затем откройте в браузере:
-- Сайт: `http://localhost:8000/index.php`
-- Админка: `http://localhost:8000/admin/admin_login.php`
+### Альтернативный доступ через localhost (для разработки):
 
-### Используя MAMP/XAMPP:
-
-1. Поместите проект в папку `htdocs` (XAMPP) или `htdocs` (MAMP)
-2. Запустите Apache и MySQL
-3. Откройте `http://localhost/songsbook_project/`
+Если хотите использовать локальный сервер:
+1. Измените в `config/db_config.php` значение DB_SERVER на 'localhost'
+2. Используйте встроенный PHP сервер: `php -S localhost:8000`
+3. Откройте `http://localhost:8000/`
 
 ## Структура админ-панели
 

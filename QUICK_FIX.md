@@ -36,7 +36,7 @@ mysql -u root -p j27119254_song < database_setup_simple.sql
 ## 🎯 После установки:
 
 Войдите в админ-панель:
-- **URL**: `http://localhost:8000/admin/admin_login.php`
+- **URL**: `https://songbooks.asmart-test-dev.ru/admin/admin_login.php`
 - **Логин**: `admin`
 - **Пароль**: `admin123`
 

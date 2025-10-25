@@ -73,7 +73,7 @@ CREATE TABLE admin_users (
 -- Добавление администратора
 -- Логин: admin, Пароль: admin123
 INSERT INTO admin_users (username, password_hash)
-VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+VALUES ('admin', '$2y$12$fCfQ9O4PFDIZWZFjWC0rV.uYj5Q6Z8uutNXoE8c114ZKjwHwKw4tu');
 
 -- Добавление тестовых данных
 
@@ -103,6 +103,6 @@ INSERT INTO textsong (id_songs, producer, textsong) VALUES
 
 -- Готово!
 -- Теперь можете войти в админ-панель:
--- URL: http://localhost:8000/admin/admin_login.php
+-- URL: https://songbooks.asmart-test-dev.ru/admin/admin_login.php
 -- Логин: admin
 -- Пароль: admin123

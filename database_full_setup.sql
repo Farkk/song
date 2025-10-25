@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `admin_users` (
 -- Пароль: admin123
 -- ВАЖНО: Смените пароль после первого входа!
 INSERT INTO `admin_users` (`username`, `password_hash`)
-VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi')
+VALUES ('admin', '$2y$12$fCfQ9O4PFDIZWZFjWC0rV.uYj5Q6Z8uutNXoE8c114ZKjwHwKw4tu')
 ON DUPLICATE KEY UPDATE `username`='admin';
 
 -- ============================================

@@ -9,7 +9,7 @@ SONGLY is a PHP-based song lyrics website that displays information about singer
 ## Database Connection
 
 All PHP files use centralized database configuration from `config/db_config.php`:
-- Host: `localhost`
+- Host: `songbooks.asmart-test-dev.ru`
 - Username: `root`
 - Password: (empty)
 - Database: `j27119254_song`
@@ -110,7 +110,7 @@ php -S localhost:8000
 ### Accessing the Admin Panel
 
 After running the SQL setup (`database_full_setup.sql`):
-- Admin URL: `http://localhost:8000/admin/admin_login.php`
+- Admin URL: `https://songbooks.asmart-test-dev.ru/admin/admin_login.php`
 - Default credentials: `admin` / `admin123`
 - Change the default password after first login!
 

@@ -61,22 +61,18 @@ mysql -u root -p < database_full_setup.sql
 Отредактируйте `config/db_config.php` при необходимости:
 
 ```php
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', 'songbooks.asmart-test-dev.ru');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', ''); // Ваш пароль
 define('DB_NAME', 'j27119254_song');
 ```
 
-4. **Запустите сервер:**
+4. **Откройте в браузере:**
 
-```bash
-php -S localhost:8000
-```
+- Сайт: `https://songbooks.asmart-test-dev.ru/index.php`
+- Админка: `https://songbooks.asmart-test-dev.ru/admin/admin_login.php`
 
-5. **Откройте в браузере:**
-
-- Сайт: `http://localhost:8000/index.php`
-- Админка: `http://localhost:8000/admin/admin_login.php`
+*Для локальной разработки можете запустить `php -S localhost:8000` и изменить DB_SERVER в config/db_config.php на 'localhost'*
 
 ### Данные для входа в админ-панель:
 
