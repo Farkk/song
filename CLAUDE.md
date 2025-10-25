@@ -34,7 +34,11 @@ The application uses five main tables:
 ## Core Pages and Architecture
 
 ### Main Entry Point
-- `index.html`: Homepage displaying news and top charts (hardcoded top 10 songs with Load More/Hide functionality)
+- `index.php`: Homepage displaying news and top charts
+  - Dynamically loads songs from database sorted by number_of_auditions DESC
+  - Shows all songs with Load More/Hide functionality (first 3 visible by default)
+  - Formats view counts (M for millions, k for thousands)
+  - Uses database image paths with fallback to default cover
 
 ### Dynamic Pages
 - `singer.php?id={id}`: Singer detail page showing:

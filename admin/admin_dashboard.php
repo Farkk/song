@@ -142,7 +142,7 @@ $stats['lyrics'] = $result->fetch_assoc()['count'];
 
         <!-- Link to main site -->
         <div class="mt-4 text-center">
-            <a href="../index.html" class="btn btn-secondary">← Вернуться на сайт</a>
+            <a href="../index.php" class="btn btn-secondary">← Вернуться на сайт</a>
         </div>
     </div>
 

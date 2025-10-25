@@ -85,7 +85,7 @@ php -S localhost:8000
 ```
 
 Затем откройте в браузере:
-- Сайт: `http://localhost:8000/index.html`
+- Сайт: `http://localhost:8000/index.php`
 - Админка: `http://localhost:8000/admin/admin_login.php`
 
 ### Используя MAMP/XAMPP:

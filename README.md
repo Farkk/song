@@ -75,7 +75,7 @@ php -S localhost:8000
 
 5. **Откройте в браузере:**
 
-- Сайт: `http://localhost:8000/index.html`
+- Сайт: `http://localhost:8000/index.php`
 - Админка: `http://localhost:8000/admin/admin_login.php`
 
 ### Данные для входа в админ-панель:

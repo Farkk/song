@@ -71,7 +71,7 @@ if (isset($_GET['id'])) {
     <header class="site-header">
         <div class="inner-content">
             <div class="site-name">
-                <a href="index.html" class="main-text">SONGLY</a>
+                <a href="index.php" class="main-text">SONGLY</a>
             </div>
             <hr class="divider">
             <div class="links-container">

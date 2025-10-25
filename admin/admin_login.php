@@ -153,7 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
 
         <div class="text-center mt-4">
-            <a href="../index.html" style="color: #999; text-decoration: none; font-size: 12px;">← Вернуться на сайт</a>
+            <a href="../index.php" style="color: #999; text-decoration: none; font-size: 12px;">← Вернуться на сайт</a>
         </div>
     </div>
 
