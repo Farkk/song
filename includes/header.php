@@ -1,11 +1,6 @@
 <?php
 // Общий хедер для всех страниц сайта
 
-// Запуск сессии если еще не запущена
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
 // Подключение к базе данных пользователей через PDO (если еще не подключено)
 if (!isset($pdo)) {
     require_once(__DIR__ . '/../config/db.php');

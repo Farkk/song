@@ -1,4 +1,7 @@
 <?php
+// Запуск сессии для авторизации
+session_start();
+
 // Подключение к базе данных
 require_once('config/db_config.php');
 
