@@ -37,12 +37,14 @@ body{
     width: 100%;
 }
 .links-container {
-    width: 412px;
+    min-width: 412px;
     height: 30px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 18px; 
-    margin-top: 6px; 
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 18px;
+    margin-top: 6px;
 }
 .link {
     font-size: 24px;
@@ -51,6 +53,24 @@ body{
 }
 .link:hover {
     text-decoration: underline;
+}
+.user-name {
+    font-size: 20px;
+    color: #cccccc;
+    cursor: default;
+}
+.user-name:hover {
+    text-decoration: none;
+}
+.logout-link {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 20px;
+    transition: color 0.3s;
+}
+.logout-link:hover {
+    color: #ff4444;
+    text-decoration: none;
 }
 main {
     display: flex; 

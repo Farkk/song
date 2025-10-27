@@ -68,19 +68,7 @@ if (isset($_GET['id'])) {
     <title><?php echo htmlspecialchars($song_text_info['name_songs']); ?> - Текст песни</title> 
 </head>
 <body>
-    <header class="site-header">
-        <div class="inner-content">
-            <div class="site-name">
-                <a href="index.php" class="main-text">SONGLY</a>
-            </div>
-            <hr class="divider">
-            <div class="links-container">
-                <a href="songs_list.php" class="link">songs</a> 
-                <a href="singers_list.php" class="link">singers</a> 
-            </div>
-            <hr class="divider">
-        </div>
-    </header>
+    <?php include('includes/header.php'); ?>
     <main>
         <div class="description-song">
             <div class="upper-container">

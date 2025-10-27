@@ -1,6 +1,20 @@
 <?php
+// Запуск сессии для авторизации
+session_start();
+
 // Подключение к базе данных
 require_once('config/db_config.php');
+
+// Подключение к базе данных пользователей через PDO
+require_once('config/db.php');
+
+// Проверка авторизации и получение данных пользователя
+$user = null;
+if (isset($_SESSION['user_id']) && isset($_SESSION['authenticated'])) {
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE id = :user_id LIMIT 1");
+    $stmt->execute(['user_id' => $_SESSION['user_id']]);
+    $user = $stmt->fetch();
+}
 
 // Получение топ песен по количеству прослушиваний
 $sql = "SELECT s.id_songs, s.name_songs, s.number_of_auditions, s.image_path,
@@ -40,6 +54,12 @@ function formatViews($number) {
             <div class="links-container">
                 <a href="songs_list.php" class="link">songs</a>
                 <a href="singers_list.php" class="link">singers</a>
+                <?php if ($user): ?>
+                    <span class="link user-name"><?php echo htmlspecialchars($user['first_name']); ?></span>
+                    <a href="auth/logout.php" class="link logout-link" title="Выход">✕</a>
+                <?php else: ?>
+                    <a href="auth/login.php" class="link">войти</a>
+                <?php endif; ?>
             </div>
             <hr class="divider">
         </div>
